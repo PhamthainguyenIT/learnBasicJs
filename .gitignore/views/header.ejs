@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Demo</title>
+        <script src="./lib/react.js"></script>
+        <script src="./lib/react-dom.js"></script>
+        <script src="./lib/browser.js"></script>
+    </head>
+    <style>
+    .header {
+    background-color: #ffffff;
+    padding: 10px 40px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header > .logo-container {
+    display: flex;
+    align-items: center;
+    }
+
+    .header > .logo-container > .logo-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    }
+
+    .header > .logo-container > .logo-text {
+    font-size: 26px;
+    font-weight: 700;
+    }
+
+    .header > .logo-container > .logo-text > .logo-highlight {
+    color: #65a9e5;
+    }
+
+    #app:not(:empty) + .sk-cube-grid {
+    display: none;
+    }
+
+    .sk-cube-grid {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    }
+
+    .sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #333;
+    float: left;
+    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    }
+
+    .sk-cube-grid .sk-cube1 {
+    animation-delay: 0.2s;
+    }
+
+    .sk-cube-grid .sk-cube2 {
+    animation-delay: 0.3s;
+    }
+
+    .sk-cube-grid .sk-cube3 {
+    animation-delay: 0.4s;
+    }
+
+    .sk-cube-grid .sk-cube4 {
+    animation-delay: 0.1s;
+    }
+
+    .sk-cube-grid .sk-cube5 {
+    animation-delay: 0.2s;
+    }
+
+    .sk-cube-grid .sk-cube6 {
+    animation-delay: 0.3s;
+    }
+
+    .sk-cube-grid .sk-cube7 {
+    animation-delay: 0s;
+    }
+
+    .sk-cube-grid .sk-cube8 {
+    animation-delay: 0.1s;
+    }
+
+    .sk-cube-grid .sk-cube9 {
+    animation-delay: 0.2s;
+    }
+
+    @keyframes sk-cubeGridScaleDelay {
+    0%,
+    70%,
+    100% {
+        transform: scale3D(1, 1, 1);
+    }
+    35% {
+        transform: scale3D(0, 0, 1);
+    }
+    }
+    </style>
+    <body>
+       <div id="headerRoot"></div>
+       <script src="./components/Header/header.js" type="text/babel"></script>
+    </body>
+</html>
